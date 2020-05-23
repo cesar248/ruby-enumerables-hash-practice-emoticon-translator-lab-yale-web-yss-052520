@@ -38,4 +38,13 @@ end
 
 def get_english_meaning(file, emoticon)
   # code goes here
+  value2 = "Sorry, that emoticon was not found"
+  emoticons = load.library(file)
+  emocons.each do |key, value|
+    
+    if emoticons[key][:japanese] == emoticon
+    value2 = emotions[key][:english]
+    end 
+  end
+  value2
 end
