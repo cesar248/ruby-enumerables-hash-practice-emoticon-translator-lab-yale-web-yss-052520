@@ -42,7 +42,7 @@ def get_english_meaning(file, emoticon)
     emoticons.each do |key, value|
     if emoticons[key][:japanese] == emoticon
       binding.pry
-      value2 = emoticons[key]
+      value2 = [key]
     end
   end
   value2
