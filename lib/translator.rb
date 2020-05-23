@@ -43,7 +43,7 @@ def get_english_meaning(file, emoticon)
   emoticons.each do |key, value|
 
     if emoticons[key][:japanese] == emoticon
-    value2 = emotions[key][:english]
+    value2 = emoticons[key][:english]
     end
   end
   value2
